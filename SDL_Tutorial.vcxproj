@@ -139,6 +139,7 @@
     <ClCompile Include="05_optimized_surface_loading_and_soft_stretching.cpp" />
     <ClCompile Include="06_extension_libraries_and_loading_other_image_formats.cpp" />
     <ClCompile Include="07_texture_loading_and_rendering.cpp" />
+    <ClCompile Include="08_geometry_rendering.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
