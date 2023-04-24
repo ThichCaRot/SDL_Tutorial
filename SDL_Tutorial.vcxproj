@@ -141,6 +141,7 @@
     <ClCompile Include="07_texture_loading_and_rendering.cpp" />
     <ClCompile Include="08_geometry_rendering.cpp" />
     <ClCompile Include="09_the_viewport.cpp" />
+    <ClCompile Include="10_color_keying.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
