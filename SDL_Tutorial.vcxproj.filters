@@ -75,6 +75,9 @@
     <ClCompile Include="20_force_feedback.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="21_sound_effects_and_music.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Image Include="background.png">
@@ -161,5 +164,22 @@
   </ItemGroup>
   <ItemGroup>
     <Font Include="lazy.ttf" />
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="beat.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="high.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="low.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="medium.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="scratch.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
   </ItemGroup>
 </Project>

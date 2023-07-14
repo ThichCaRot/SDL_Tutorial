@@ -112,7 +112,7 @@
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_image.lib;SDL2_ttf.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_image.lib;SDL2_ttf.lib;SDL2_mixer.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -152,6 +152,7 @@
     <ClCompile Include="18_key_states.cpp" />
     <ClCompile Include="19_gamepads_and_joysticks.cpp" />
     <ClCompile Include="20_force_feedback.cpp" />
+    <ClCompile Include="21_sound_effects_and_music.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="arrow.png" />
@@ -184,6 +185,13 @@
   </ItemGroup>
   <ItemGroup>
     <Font Include="lazy.ttf" />
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="beat.wav" />
+    <Media Include="high.wav" />
+    <Media Include="low.wav" />
+    <Media Include="medium.wav" />
+    <Media Include="scratch.wav" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
