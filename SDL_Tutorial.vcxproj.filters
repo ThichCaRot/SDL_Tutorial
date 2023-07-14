@@ -138,6 +138,9 @@
     <ClCompile Include="41_bitmap_fonts\41_bitmap_fonts.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="42_texture_streaming\42_texture_streaming.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Image Include="background.png">
@@ -273,6 +276,18 @@
       <Filter>Resource Files</Filter>
     </Image>
     <Image Include="41_bitmap_fonts\lazyfont.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="42_texture_streaming\foo_walk_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="42_texture_streaming\foo_walk_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="42_texture_streaming\foo_walk_2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="42_texture_streaming\foo_walk_3.png">
       <Filter>Resource Files</Filter>
     </Image>
   </ItemGroup>
