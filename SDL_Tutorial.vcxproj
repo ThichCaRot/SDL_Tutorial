@@ -161,12 +161,15 @@
     <ClCompile Include="27_collision_detection\27_collision_detection.cpp" />
     <ClCompile Include="28_per-pixel_collision_detection\28_per-pixel_collision_detection.cpp" />
     <ClCompile Include="29_circular_collision_detection\29_circular_collision_detection.cpp" />
+    <ClCompile Include="30_scrolling\30_scrolling.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="26_motion\dot.bmp" />
     <Image Include="27_collision_detection\dot.bmp" />
     <Image Include="28_per-pixel_collision_detection\dot.bmp" />
     <Image Include="29_circular_collision_detection\dot.bmp" />
+    <Image Include="30_scrolling\bg.png" />
+    <Image Include="30_scrolling\dot.bmp" />
     <Image Include="arrow.png" />
     <Image Include="arrow_joy.png" />
     <Image Include="background.png" />
