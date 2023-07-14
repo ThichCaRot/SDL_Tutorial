@@ -126,6 +126,9 @@
     <ClCompile Include="37_multiple_displays\37_multiple_displays.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="38_particle_engines\38_particle_engines.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Image Include="background.png">
@@ -234,6 +237,21 @@
       <Filter>Resource Files</Filter>
     </Image>
     <Image Include="35_window_events\window.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="38_particle_engines\blue.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="38_particle_engines\dot.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="38_particle_engines\green.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="38_particle_engines\red.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="38_particle_engines\shimmer.bmp">
       <Filter>Resource Files</Filter>
     </Image>
   </ItemGroup>

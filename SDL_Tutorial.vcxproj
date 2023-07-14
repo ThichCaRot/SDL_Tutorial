@@ -169,6 +169,7 @@
     <ClCompile Include="35_window_events\35_window_events.cpp" />
     <ClCompile Include="36_multiple_windows\36_multiple_windows.cpp" />
     <ClCompile Include="37_multiple_displays\37_multiple_displays.cpp" />
+    <ClCompile Include="38_particle_engines\38_particle_engines.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="26_motion\dot.bmp" />
@@ -180,6 +181,11 @@
     <Image Include="31_scrolling_backgrounds\bg.png" />
     <Image Include="31_scrolling_backgrounds\dot.bmp" />
     <Image Include="35_window_events\window.png" />
+    <Image Include="38_particle_engines\blue.bmp" />
+    <Image Include="38_particle_engines\dot.bmp" />
+    <Image Include="38_particle_engines\green.bmp" />
+    <Image Include="38_particle_engines\red.bmp" />
+    <Image Include="38_particle_engines\shimmer.bmp" />
     <Image Include="arrow.png" />
     <Image Include="arrow_joy.png" />
     <Image Include="background.png" />
