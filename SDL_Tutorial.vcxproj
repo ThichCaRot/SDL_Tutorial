@@ -175,6 +175,7 @@
     <ClCompile Include="41_bitmap_fonts\41_bitmap_fonts.cpp" />
     <ClCompile Include="42_texture_streaming\42_texture_streaming.cpp" />
     <ClCompile Include="43_render_to_texture\43_render_to_texture.cpp" />
+    <ClCompile Include="44_frame_independent_movement\44_frame_independent_movement.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="26_motion\dot.bmp" />
@@ -199,6 +200,7 @@
     <Image Include="42_texture_streaming\foo_walk_1.png" />
     <Image Include="42_texture_streaming\foo_walk_2.png" />
     <Image Include="42_texture_streaming\foo_walk_3.png" />
+    <Image Include="44_frame_independent_movement\dot.bmp" />
     <Image Include="arrow.png" />
     <Image Include="arrow_joy.png" />
     <Image Include="background.png" />

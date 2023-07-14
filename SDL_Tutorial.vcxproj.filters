@@ -144,6 +144,9 @@
     <ClCompile Include="43_render_to_texture\43_render_to_texture.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="44_frame_independent_movement\44_frame_independent_movement.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Image Include="background.png">
@@ -291,6 +294,9 @@
       <Filter>Resource Files</Filter>
     </Image>
     <Image Include="42_texture_streaming\foo_walk_3.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="44_frame_independent_movement\dot.bmp">
       <Filter>Resource Files</Filter>
     </Image>
   </ItemGroup>
