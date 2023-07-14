@@ -182,6 +182,7 @@
     <ClCompile Include="48_atomic_operations\48_atomic_operations.cpp" />
     <ClCompile Include="49_mutexes_and_conditions\49_mutexes_and_conditions.cpp" />
     <ClCompile Include="50_SDL_and_opengl_2\50_SDL_and_opengl_2.cpp" />
+    <ClCompile Include="51_SDL_and_modern_opengl\51_SDL_and_modern_opengl.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="26_motion\dot.bmp" />
