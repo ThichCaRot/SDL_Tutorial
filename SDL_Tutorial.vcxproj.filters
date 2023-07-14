@@ -123,6 +123,9 @@
     <ClCompile Include="36_multiple_windows\36_multiple_windows.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="37_multiple_displays\37_multiple_displays.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Image Include="background.png">

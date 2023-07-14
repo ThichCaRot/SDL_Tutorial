@@ -168,6 +168,7 @@
     <ClCompile Include="34_audio_recording\34_audio_recording.cpp" />
     <ClCompile Include="35_window_events\35_window_events.cpp" />
     <ClCompile Include="36_multiple_windows\36_multiple_windows.cpp" />
+    <ClCompile Include="37_multiple_displays\37_multiple_displays.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="26_motion\dot.bmp" />
