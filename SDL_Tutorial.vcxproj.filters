@@ -159,6 +159,9 @@
     <ClCompile Include="48_atomic_operations\48_atomic_operations.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="49_mutexes_and_conditions\49_mutexes_and_conditions.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Image Include="background.png">
@@ -321,6 +324,9 @@
       <Filter>Resource Files</Filter>
     </Image>
     <Image Include="48_atomic_operations\splash.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="49_mutexes_and_conditions\splash.png">
       <Filter>Resource Files</Filter>
     </Image>
   </ItemGroup>
