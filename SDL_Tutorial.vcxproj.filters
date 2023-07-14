@@ -87,6 +87,9 @@
     <ClCompile Include="24_calculating_frame_rate\24_calculating_frame_rate.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="25_capping_frame_rate\25_capping_frame_rate.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Image Include="background.png">
@@ -176,6 +179,7 @@
     <Font Include="22_timing\lazy.ttf" />
     <Font Include="23_advanced_timers\lazy.ttf" />
     <Font Include="24_calculating_frame_rate\lazy.ttf" />
+    <Font Include="25_capping_frame_rate\lazy.ttf" />
   </ItemGroup>
   <ItemGroup>
     <Media Include="beat.wav">
