@@ -149,6 +149,7 @@
     <ClCompile Include="15_rotation_and_flipping.cpp" />
     <ClCompile Include="16_true_type_fonts.cpp" />
     <ClCompile Include="17_mouse_events.cpp" />
+    <ClCompile Include="18_key_states.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="arrow.png" />
@@ -157,18 +158,23 @@
     <Image Include="colors.png" />
     <Image Include="dots.png" />
     <Image Include="down.bmp" />
+    <Image Include="down.png" />
     <Image Include="fadein.png" />
     <Image Include="fadeout.png" />
     <Image Include="foi.png" />
     <Image Include="foo.png" />
     <Image Include="hello_world.bmp" />
     <Image Include="left.bmp" />
+    <Image Include="left.png" />
     <Image Include="loaded.png" />
     <Image Include="press.bmp" />
+    <Image Include="press.png" />
     <Image Include="right.bmp" />
+    <Image Include="right.png" />
     <Image Include="stretch.bmp" />
     <Image Include="texture.png" />
     <Image Include="up.bmp" />
+    <Image Include="up.png" />
     <Image Include="viewport.png" />
     <Image Include="x.bmp" />
   </ItemGroup>
