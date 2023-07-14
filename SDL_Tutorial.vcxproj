@@ -165,6 +165,7 @@
     <ClCompile Include="31_scrolling_backgrounds\31_scrolling_backgrounds.cpp" />
     <ClCompile Include="32_text_input_and_clipboard_handling\32_text_input_and_clipboard_handling.cpp" />
     <ClCompile Include="33_file_reading_and_writing\33_file_reading_and_writing.cpp" />
+    <ClCompile Include="34_audio_recording\34_audio_recording.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="26_motion\dot.bmp" />
@@ -210,6 +211,7 @@
     <Font Include="25_capping_frame_rate\lazy.ttf" />
     <Font Include="32_text_input_and_clipboard_handling\lazy.ttf" />
     <Font Include="33_file_reading_and_writing\lazy.ttf" />
+    <Font Include="34_audio_recording\lazy.ttf" />
     <Font Include="lazy.ttf" />
   </ItemGroup>
   <ItemGroup>
