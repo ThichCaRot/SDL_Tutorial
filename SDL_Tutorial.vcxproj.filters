@@ -117,6 +117,9 @@
     <ClCompile Include="34_audio_recording\34_audio_recording.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="35_window_events\35_window_events.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Image Include="background.png">
@@ -222,6 +225,9 @@
       <Filter>Resource Files</Filter>
     </Image>
     <Image Include="31_scrolling_backgrounds\dot.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="35_window_events\window.png">
       <Filter>Resource Files</Filter>
     </Image>
   </ItemGroup>
