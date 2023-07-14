@@ -69,6 +69,9 @@
     <ClCompile Include="18_key_states.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="19_gamepads_and_joysticks.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Image Include="background.png">
@@ -144,6 +147,9 @@
       <Filter>Resource Files</Filter>
     </Image>
     <Image Include="up.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="arrow_joy.png">
       <Filter>Resource Files</Filter>
     </Image>
   </ItemGroup>

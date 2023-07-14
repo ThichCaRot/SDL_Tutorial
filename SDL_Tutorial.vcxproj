@@ -150,9 +150,11 @@
     <ClCompile Include="16_true_type_fonts.cpp" />
     <ClCompile Include="17_mouse_events.cpp" />
     <ClCompile Include="18_key_states.cpp" />
+    <ClCompile Include="19_gamepads_and_joysticks.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="arrow.png" />
+    <Image Include="arrow_joy.png" />
     <Image Include="background.png" />
     <Image Include="button.png" />
     <Image Include="colors.png" />
