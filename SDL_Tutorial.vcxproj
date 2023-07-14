@@ -144,6 +144,26 @@
     <ClCompile Include="10_color_keying.cpp" />
     <ClCompile Include="11_clip_rendering_and_sprite_sheets.cpp" />
     <ClCompile Include="12_color_modulation.cpp" />
+    <ClCompile Include="13_alpha_blending.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="background.png" />
+    <Image Include="colors.png" />
+    <Image Include="dots.png" />
+    <Image Include="down.bmp" />
+    <Image Include="fadein.png" />
+    <Image Include="fadeout.png" />
+    <Image Include="foo.png" />
+    <Image Include="hello_world.bmp" />
+    <Image Include="left.bmp" />
+    <Image Include="loaded.png" />
+    <Image Include="press.bmp" />
+    <Image Include="right.bmp" />
+    <Image Include="stretch.bmp" />
+    <Image Include="texture.png" />
+    <Image Include="up.bmp" />
+    <Image Include="viewport.png" />
+    <Image Include="x.bmp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

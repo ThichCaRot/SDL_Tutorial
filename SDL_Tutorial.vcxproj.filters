@@ -51,5 +51,61 @@
     <ClCompile Include="12_color_modulation.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="13_alpha_blending.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="background.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="colors.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="dots.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="down.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="fadein.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="fadeout.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="foo.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="hello_world.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="left.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="loaded.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="press.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="right.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="stretch.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="texture.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="up.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="viewport.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="x.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
   </ItemGroup>
 </Project>
