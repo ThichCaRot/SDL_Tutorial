@@ -72,6 +72,9 @@
     <ClCompile Include="19_gamepads_and_joysticks.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="20_force_feedback.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Image Include="background.png">
@@ -150,6 +153,9 @@
       <Filter>Resource Files</Filter>
     </Image>
     <Image Include="arrow_joy.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="splash.png">
       <Filter>Resource Files</Filter>
     </Image>
   </ItemGroup>

@@ -151,6 +151,7 @@
     <ClCompile Include="17_mouse_events.cpp" />
     <ClCompile Include="18_key_states.cpp" />
     <ClCompile Include="19_gamepads_and_joysticks.cpp" />
+    <ClCompile Include="20_force_feedback.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="arrow.png" />
@@ -173,6 +174,7 @@
     <Image Include="press.png" />
     <Image Include="right.bmp" />
     <Image Include="right.png" />
+    <Image Include="splash.png" />
     <Image Include="stretch.bmp" />
     <Image Include="texture.png" />
     <Image Include="up.bmp" />
