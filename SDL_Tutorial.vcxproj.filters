@@ -90,6 +90,9 @@
     <ClCompile Include="25_capping_frame_rate\25_capping_frame_rate.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="26_motion\26_motion.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Image Include="background.png">
@@ -171,6 +174,9 @@
       <Filter>Resource Files</Filter>
     </Image>
     <Image Include="splash.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="26_motion\dot.bmp">
       <Filter>Resource Files</Filter>
     </Image>
   </ItemGroup>
