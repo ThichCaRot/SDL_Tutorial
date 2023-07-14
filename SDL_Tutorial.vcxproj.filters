@@ -99,6 +99,9 @@
     <ClCompile Include="28_per-pixel_collision_detection\28_per-pixel_collision_detection.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="29_circular_collision_detection\29_circular_collision_detection.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Image Include="background.png">
@@ -189,6 +192,9 @@
       <Filter>Resource Files</Filter>
     </Image>
     <Image Include="28_per-pixel_collision_detection\dot.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="29_circular_collision_detection\dot.bmp">
       <Filter>Resource Files</Filter>
     </Image>
   </ItemGroup>
