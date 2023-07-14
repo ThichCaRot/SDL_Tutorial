@@ -78,6 +78,9 @@
     <ClCompile Include="21_sound_effects_and_music.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="22_timing\22_timing.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Image Include="background.png">
@@ -164,6 +167,7 @@
   </ItemGroup>
   <ItemGroup>
     <Font Include="lazy.ttf" />
+    <Font Include="22_timing\lazy.ttf" />
   </ItemGroup>
   <ItemGroup>
     <Media Include="beat.wav">
