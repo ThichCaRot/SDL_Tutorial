@@ -147,6 +147,7 @@
     <ClCompile Include="13_alpha_blending.cpp" />
     <ClCompile Include="14_animated_sprites_and_vsync.cpp" />
     <ClCompile Include="15_rotation_and_flipping.cpp" />
+    <ClCompile Include="16_true_type_fonts.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="arrow.png" />
@@ -168,6 +169,9 @@
     <Image Include="up.bmp" />
     <Image Include="viewport.png" />
     <Image Include="x.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Font Include="lazy.ttf" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
