@@ -48,5 +48,8 @@
     <ClCompile Include="11_clip_rendering_and_sprite_sheets.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="12_color_modulation.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
