@@ -84,66 +84,6 @@
 //	int mHeight;
 //};
 //
-////The application time based timer
-//class LTimer
-//{
-//    public:
-//		//Initializes variables
-//		LTimer();
-//
-//		//The various clock actions
-//		void start();
-//		void stop();
-//		void pause();
-//		void unpause();
-//
-//		//Gets the timer's time
-//		Uint32 getTicks();
-//
-//		//Checks the status of the timer
-//		bool isStarted();
-//		bool isPaused();
-//
-//    private:
-//		//The clock time when the timer started
-//		Uint32 mStartTicks;
-//
-//		//The ticks stored when the timer was paused
-//		Uint32 mPausedTicks;
-//
-//		//The timer status
-//		bool mPaused;
-//		bool mStarted;
-//};
-//
-////The dot that will move around on the screen
-//class Dot
-//{
-//    public:
-//		//The dimensions of the dot
-//		static const int DOT_WIDTH = 20;
-//		static const int DOT_HEIGHT = 20;
-//
-//		//Maximum axis velocity of the dot
-//		static const int DOT_VEL = 640;
-//
-//		//Initializes the variables
-//		Dot();
-//
-//		//Takes key presses and adjusts the dot's velocity
-//		void handleEvent( SDL_Event& e );
-//
-//		//Moves the dot
-//		void move( float timeStep );
-//
-//		//Shows the dot on the screen
-//		void render();
-//
-//    private:
-//		float mPosX, mPosY;
-//		float mVelX, mVelY;
-//};
-//
 ////Starts up SDL and creates window
 //bool init();
 //
@@ -153,6 +93,9 @@
 ////Frees media and shuts down SDL
 //void close();
 //
+////Our test callback function
+//Uint32 callback( Uint32 interval, void* param );
+//
 ////The window we'll be rendering to
 //SDL_Window* gWindow = NULL;
 //
@@ -160,7 +103,7 @@
 //SDL_Renderer* gRenderer = NULL;
 //
 ////Scene textures
-//LTexture gDotTexture;
+//LTexture gSplashTexture;
 //
 //LTexture::LTexture()
 //{
@@ -480,191 +423,13 @@
 //	}
 //}
 //
-//
-//LTimer::LTimer()
-//{
-//    //Initialize the variables
-//    mStartTicks = 0;
-//    mPausedTicks = 0;
-//
-//    mPaused = false;
-//    mStarted = false;
-//}
-//
-//void LTimer::start()
-//{
-//    //Start the timer
-//    mStarted = true;
-//
-//    //Unpause the timer
-//    mPaused = false;
-//
-//    //Get the current clock time
-//    mStartTicks = SDL_GetTicks();
-//	mPausedTicks = 0;
-//}
-//
-//void LTimer::stop()
-//{
-//    //Stop the timer
-//    mStarted = false;
-//
-//    //Unpause the timer
-//    mPaused = false;
-//
-//	//Clear tick variables
-//	mStartTicks = 0;
-//	mPausedTicks = 0;
-//}
-//
-//void LTimer::pause()
-//{
-//    //If the timer is running and isn't already paused
-//    if( mStarted && !mPaused )
-//    {
-//        //Pause the timer
-//        mPaused = true;
-//
-//        //Calculate the paused ticks
-//        mPausedTicks = SDL_GetTicks() - mStartTicks;
-//		mStartTicks = 0;
-//    }
-//}
-//
-//void LTimer::unpause()
-//{
-//    //If the timer is running and paused
-//    if( mStarted && mPaused )
-//    {
-//        //Unpause the timer
-//        mPaused = false;
-//
-//        //Reset the starting ticks
-//        mStartTicks = SDL_GetTicks() - mPausedTicks;
-//
-//        //Reset the paused ticks
-//        mPausedTicks = 0;
-//    }
-//}
-//
-//Uint32 LTimer::getTicks()
-//{
-//	//The actual timer time
-//	Uint32 time = 0;
-//
-//    //If the timer is running
-//    if( mStarted )
-//    {
-//        //If the timer is paused
-//        if( mPaused )
-//        {
-//            //Return the number of ticks when the timer was paused
-//            time = mPausedTicks;
-//        }
-//        else
-//        {
-//            //Return the current time minus the start time
-//            time = SDL_GetTicks() - mStartTicks;
-//        }
-//    }
-//
-//    return time;
-//}
-//
-//bool LTimer::isStarted()
-//{
-//	//Timer is running and paused or unpaused
-//    return mStarted;
-//}
-//
-//bool LTimer::isPaused()
-//{
-//	//Timer is running and paused
-//    return mPaused && mStarted;
-//}
-//
-//
-//Dot::Dot()
-//{
-//    //Initialize the position
-//    mPosX = 0;
-//    mPosY = 0;
-//
-//    //Initialize the velocity
-//    mVelX = 0;
-//    mVelY = 0;
-//}
-//
-//void Dot::handleEvent( SDL_Event& e )
-//{
-//    //If a key was pressed
-//	if( e.type == SDL_KEYDOWN && e.key.repeat == 0 )
-//    {
-//        //Adjust the velocity
-//        switch( e.key.keysym.sym )
-//        {
-//            case SDLK_UP: mVelY -= DOT_VEL; break;
-//            case SDLK_DOWN: mVelY += DOT_VEL; break;
-//            case SDLK_LEFT: mVelX -= DOT_VEL; break;
-//            case SDLK_RIGHT: mVelX += DOT_VEL; break;
-//        }
-//    }
-//    //If a key was released
-//    else if( e.type == SDL_KEYUP && e.key.repeat == 0 )
-//    {
-//        //Adjust the velocity
-//        switch( e.key.keysym.sym )
-//        {
-//            case SDLK_UP: mVelY += DOT_VEL; break;
-//            case SDLK_DOWN: mVelY -= DOT_VEL; break;
-//            case SDLK_LEFT: mVelX += DOT_VEL; break;
-//            case SDLK_RIGHT: mVelX -= DOT_VEL; break;
-//        }
-//    }
-//}
-//
-//void Dot::move( float timeStep )
-//{
-//    //Move the dot left or right
-//    mPosX += mVelX * timeStep;
-//
-//    //If the dot went too far to the left or right
-//	if( mPosX < 0 )
-//	{
-//		mPosX = 0;
-//	}
-//	else if( mPosX > SCREEN_WIDTH - DOT_WIDTH )
-//	{
-//		mPosX = SCREEN_WIDTH - DOT_WIDTH;
-//	}
-//	
-//    //Move the dot up or down
-//    mPosY += mVelY * timeStep;
-//
-//    //If the dot went too far up or down
-//	if( mPosY < 0 )
-//	{
-//		mPosY = 0;
-//	}
-//	else if( mPosY > SCREEN_HEIGHT - DOT_HEIGHT )
-//	{
-//		mPosY = SCREEN_HEIGHT - DOT_HEIGHT;
-//	}
-//}
-//
-//void Dot::render()
-//{
-//    //Show the dot
-//	gDotTexture.render( (int)mPosX, (int)mPosY );
-//}
-//
 //bool init()
 //{
 //	//Initialization flag
 //	bool success = true;
 //
 //	//Initialize SDL
-//	if( SDL_Init( SDL_INIT_VIDEO ) < 0 )
+//	if (SDL_Init( SDL_INIT_VIDEO | SDL_INIT_TIMER ) < 0 )
 //	{
 //		printf( "SDL could not initialize! SDL Error: %s\n", SDL_GetError() );
 //		success = false;
@@ -677,6 +442,9 @@
 //			printf( "Warning: Linear texture filtering not enabled!" );
 //		}
 //
+//		//Seed random
+//		srand( SDL_GetTicks() );
+//
 //		//Create window
 //		gWindow = SDL_CreateWindow( "SDL Tutorial", SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, SCREEN_WIDTH, SCREEN_HEIGHT, SDL_WINDOW_SHOWN );
 //		if( gWindow == NULL )
@@ -687,7 +455,7 @@
 //		else
 //		{
 //			//Create renderer for window
-//			gRenderer = SDL_CreateRenderer( gWindow, -1, SDL_RENDERER_ACCELERATED );
+//			gRenderer = SDL_CreateRenderer( gWindow, -1, SDL_RENDERER_ACCELERATED | SDL_RENDERER_PRESENTVSYNC );
 //			if( gRenderer == NULL )
 //			{
 //				printf( "Renderer could not be created! SDL Error: %s\n", SDL_GetError() );
@@ -717,10 +485,10 @@
 //	//Loading success flag
 //	bool success = true;
 //	
-//	//Load dot texture
-//	if( !gDotTexture.loadFromFile( "44_frame_independent_movement/dot.bmp" ) )
+//	//Load splash texture
+//	if( !gSplashTexture.loadFromFile( "45_timer_callbacks/splash.png" ) )
 //	{
-//		printf( "Failed to load dot texture!\n" );
+//		printf( "Failed to load splash texture!\n" );
 //		success = false;
 //	}
 //
@@ -730,7 +498,7 @@
 //void close()
 //{
 //	//Free loaded images
-//	gDotTexture.free();
+//	gSplashTexture.free();
 //
 //	//Destroy window	
 //	SDL_DestroyRenderer( gRenderer );
@@ -741,6 +509,14 @@
 //	//Quit SDL subsystems
 //	IMG_Quit();
 //	SDL_Quit();
+//}
+//
+//Uint32 callback( Uint32 interval, void* param )
+//{
+//	//Print callback message
+//	printf( "Callback called back with message: %s\n", reinterpret_cast<char*>(param) );
+//
+//	return 0;
 //}
 //
 //int main( int argc, char* args[] )
@@ -765,11 +541,8 @@
 //			//Event handler
 //			SDL_Event e;
 //
-//			//The dot that will be moving around on the screen
-//			Dot dot;
-//
-//			//Keeps track of time between steps
-//			LTimer stepTimer;
+//			//Set callback
+//			SDL_TimerID timerID = SDL_AddTimer( 3 * 1000, callback, reinterpret_cast<void*>( "3 seconds waited!" ) );
 //
 //			//While application is running
 //			while( !quit )
@@ -782,30 +555,21 @@
 //					{
 //						quit = true;
 //					}
-//
-//					//Handle input for the dot
-//					dot.handleEvent( e );
 //				}
-//
-//				//Calculate time step
-//				float timeStep = stepTimer.getTicks() / 1000.f;
-//
-//				//Move for time step
-//				dot.move( timeStep );
-//
-//				//Restart step timer
-//				stepTimer.start();
 //
 //				//Clear screen
 //				SDL_SetRenderDrawColor( gRenderer, 0xFF, 0xFF, 0xFF, 0xFF );
 //				SDL_RenderClear( gRenderer );
 //
-//				//Render dot
-//				dot.render();
+//				//Render splash
+//				gSplashTexture.render( 0, 0 );
 //
 //				//Update screen
 //				SDL_RenderPresent( gRenderer );
 //			}
+//
+//			//Remove timer in case the call back was not called
+//			SDL_RemoveTimer( timerID );
 //		}
 //	}
 //

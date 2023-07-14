@@ -147,6 +147,9 @@
     <ClCompile Include="44_frame_independent_movement\44_frame_independent_movement.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="45_timer_callbacks\45_timer_callbacks.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Image Include="background.png">
@@ -297,6 +300,9 @@
       <Filter>Resource Files</Filter>
     </Image>
     <Image Include="44_frame_independent_movement\dot.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="45_timer_callbacks\splash.png">
       <Filter>Resource Files</Filter>
     </Image>
   </ItemGroup>
