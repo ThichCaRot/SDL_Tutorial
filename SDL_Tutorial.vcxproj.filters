@@ -153,6 +153,9 @@
     <ClCompile Include="46_multithreading\46_multithreading.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="47_semaphores\47_semaphores.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Image Include="background.png">
@@ -309,6 +312,9 @@
       <Filter>Resource Files</Filter>
     </Image>
     <Image Include="46_multithreading\splash.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="47_semaphores\splash.png">
       <Filter>Resource Files</Filter>
     </Image>
   </ItemGroup>
