@@ -54,6 +54,9 @@
     <ClCompile Include="13_alpha_blending.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="14_animated_sprites_and_vsync.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Image Include="background.png">
@@ -105,6 +108,9 @@
       <Filter>Resource Files</Filter>
     </Image>
     <Image Include="x.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="foi.png">
       <Filter>Resource Files</Filter>
     </Image>
   </ItemGroup>
