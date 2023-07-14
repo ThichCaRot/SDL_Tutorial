@@ -158,9 +158,11 @@
     <ClCompile Include="24_calculating_frame_rate\24_calculating_frame_rate.cpp" />
     <ClCompile Include="25_capping_frame_rate\25_capping_frame_rate.cpp" />
     <ClCompile Include="26_motion\26_motion.cpp" />
+    <ClCompile Include="27_collision_detection\27_collision_detection.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="26_motion\dot.bmp" />
+    <Image Include="27_collision_detection\dot.bmp" />
     <Image Include="arrow.png" />
     <Image Include="arrow_joy.png" />
     <Image Include="background.png" />
