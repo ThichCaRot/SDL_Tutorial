@@ -27,143 +27,143 @@ struct SnakeSegment {
     int x, y;
 };
 
-int main(int argc, char* argv[]) {
-    // Initialize SDL
-    if (SDL_Init(SDL_INIT_VIDEO) != 0) {
-        std::cerr << "Failed to initialize SDL: " << SDL_GetError() << std::endl;
-        return 1;
-    }
-
-    // Create the game window
-    SDL_Window* window = SDL_CreateWindow("Snake Game", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, WINDOW_WIDTH, WINDOW_HEIGHT, 0);
-    if (!window) {
-        std::cerr << "Failed to create window: " << SDL_GetError() << std::endl;
-        SDL_Quit();
-        return 1;
-    }
-
-    // Create the game renderer
-    SDL_Renderer* renderer = SDL_CreateRenderer(window, -1, SDL_RENDERER_ACCELERATED);
-    if (!renderer) {
-        std::cerr << "Failed to create renderer: " << SDL_GetError() << std::endl;
-        SDL_DestroyWindow(window);
-        SDL_Quit();
-        return 1;
-    }
-
-    // Initialize the game variables
-    std::vector<SnakeSegment> snake;
-    Direction snakeDirection = Direction::RIGHT;
-    int foodX = 0, foodY = 0;
-    int score = 0;
-    bool quit = false;
-
-    // Set initial snake position
-    for (int i = 0; i < INITIAL_SNAKE_SIZE; ++i) {
-        snake.push_back({ WINDOW_WIDTH / 2 - i * GRID_SIZE, WINDOW_HEIGHT / 2 });
-    }
-
-    // Game loop
-    while (!quit) {
-        SDL_Event event;
-        while (SDL_PollEvent(&event)) {
-            if (event.type == SDL_QUIT) {
-                quit = true;
-            }
-            else if (event.type == SDL_KEYDOWN) {
-                switch (event.key.keysym.sym) {
-                case SDLK_UP:
-                    snakeDirection = Direction::UP;
-                    break;
-                case SDLK_DOWN:
-                    snakeDirection = Direction::DOWN;
-                    break;
-                case SDLK_LEFT:
-                    snakeDirection = Direction::LEFT;
-                    break;
-                case SDLK_RIGHT:
-                    snakeDirection = Direction::RIGHT;
-                    break;
-                }
-            }
-        }
-
-        // Move the snake
-        int headX = snake.front().x;
-        int headY = snake.front().y;
-        switch (snakeDirection) {
-        case Direction::UP:
-            headY -= GRID_SIZE;
-            break;
-        case Direction::DOWN:
-            headY += GRID_SIZE;
-            break;
-        case Direction::LEFT:
-            headX -= GRID_SIZE;
-            break;
-        case Direction::RIGHT:
-            headX += GRID_SIZE;
-            break;
-        }
-
-        // Check for collision with food
-        if (headX == foodX && headY == foodY) {
-            // Increase score
-            score++;
-
-            // Generate new food position
-            foodX = (rand() % (WINDOW_WIDTH / GRID_SIZE)) * GRID_SIZE;
-            foodY = (rand() % (WINDOW_HEIGHT / GRID_SIZE)) * GRID_SIZE;
-
-            // Increase snake size
-            snake.push_back({});
-        }
-        else {
-            // Remove tail segment
-            snake.pop_back();
-        }
-
-        // Check for self-collision
-        for (const auto& segment : snake) {
-            if (segment.x == headX && segment.y == headY) {
-                quit = true;
-                break;
-            }
-        }
-
-        // Add new head segment
-        snake.insert(snake.begin(), { headX, headY });
-
-        // Clear the screen
-        SDL_SetRenderDrawColor(renderer, 0, 0, 0, 255);
-        SDL_RenderClear(renderer);
-
-        // Draw snake
-        SDL_SetRenderDrawColor(renderer, 0, 255, 0, 255);
-        for (const auto& segment : snake) {
-            SDL_Rect rect{ segment.x, segment.y, GRID_SIZE, GRID_SIZE };
-            SDL_RenderFillRect(renderer, &rect);
-        }
-
-        // Draw food
-        SDL_SetRenderDrawColor(renderer, 255, 0, 0, 255);
-        SDL_Rect foodRect{ foodX, foodY, GRID_SIZE, GRID_SIZE };
-        SDL_RenderFillRect(renderer, &foodRect);
-
-        // Update the screen
-        SDL_RenderPresent(renderer);
-
-        // Delay for snake movement
-        SDL_Delay(SNAKE_SPEED);
-    }
-
-    // Clean up and quit
-    SDL_DestroyRenderer(renderer);
-    SDL_DestroyWindow(window);
-    SDL_Quit();
-
-    return 0;
-}
+//int main(int argc, char* argv[]) {
+//    // Initialize SDL
+//    if (SDL_Init(SDL_INIT_VIDEO) != 0) {
+//        std::cerr << "Failed to initialize SDL: " << SDL_GetError() << std::endl;
+//        return 1;
+//    }
+//
+//    // Create the game window
+//    SDL_Window* window = SDL_CreateWindow("Snake Game", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, WINDOW_WIDTH, WINDOW_HEIGHT, 0);
+//    if (!window) {
+//        std::cerr << "Failed to create window: " << SDL_GetError() << std::endl;
+//        SDL_Quit();
+//        return 1;
+//    }
+//
+//    // Create the game renderer
+//    SDL_Renderer* renderer = SDL_CreateRenderer(window, -1, SDL_RENDERER_ACCELERATED);
+//    if (!renderer) {
+//        std::cerr << "Failed to create renderer: " << SDL_GetError() << std::endl;
+//        SDL_DestroyWindow(window);
+//        SDL_Quit();
+//        return 1;
+//    }
+//
+//    // Initialize the game variables
+//    std::vector<SnakeSegment> snake;
+//    Direction snakeDirection = Direction::RIGHT;
+//    int foodX = 0, foodY = 0;
+//    int score = 0;
+//    bool quit = false;
+//
+//    // Set initial snake position
+//    for (int i = 0; i < INITIAL_SNAKE_SIZE; ++i) {
+//        snake.push_back({ WINDOW_WIDTH / 2 - i * GRID_SIZE, WINDOW_HEIGHT / 2 });
+//    }
+//
+//    // Game loop
+//    while (!quit) {
+//        SDL_Event event;
+//        while (SDL_PollEvent(&event)) {
+//            if (event.type == SDL_QUIT) {
+//                quit = true;
+//            }
+//            else if (event.type == SDL_KEYDOWN) {
+//                switch (event.key.keysym.sym) {
+//                case SDLK_UP:
+//                    snakeDirection = Direction::UP;
+//                    break;
+//                case SDLK_DOWN:
+//                    snakeDirection = Direction::DOWN;
+//                    break;
+//                case SDLK_LEFT:
+//                    snakeDirection = Direction::LEFT;
+//                    break;
+//                case SDLK_RIGHT:
+//                    snakeDirection = Direction::RIGHT;
+//                    break;
+//                }
+//            }
+//        }
+//
+//        // Move the snake
+//        int headX = snake.front().x;
+//        int headY = snake.front().y;
+//        switch (snakeDirection) {
+//        case Direction::UP:
+//            headY -= GRID_SIZE;
+//            break;
+//        case Direction::DOWN:
+//            headY += GRID_SIZE;
+//            break;
+//        case Direction::LEFT:
+//            headX -= GRID_SIZE;
+//            break;
+//        case Direction::RIGHT:
+//            headX += GRID_SIZE;
+//            break;
+//        }
+//
+//        // Check for collision with food
+//        if (headX == foodX && headY == foodY) {
+//            // Increase score
+//            score++;
+//
+//            // Generate new food position
+//            foodX = (rand() % (WINDOW_WIDTH / GRID_SIZE)) * GRID_SIZE;
+//            foodY = (rand() % (WINDOW_HEIGHT / GRID_SIZE)) * GRID_SIZE;
+//
+//            // Increase snake size
+//            snake.push_back({});
+//        }
+//        else {
+//            // Remove tail segment
+//            snake.pop_back();
+//        }
+//
+//        // Check for self-collision
+//        for (const auto& segment : snake) {
+//            if (segment.x == headX && segment.y == headY) {
+//                quit = true;
+//                break;
+//            }
+//        }
+//
+//        // Add new head segment
+//        snake.insert(snake.begin(), { headX, headY });
+//
+//        // Clear the screen
+//        SDL_SetRenderDrawColor(renderer, 0, 0, 0, 255);
+//        SDL_RenderClear(renderer);
+//
+//        // Draw snake
+//        SDL_SetRenderDrawColor(renderer, 0, 255, 0, 255);
+//        for (const auto& segment : snake) {
+//            SDL_Rect rect{ segment.x, segment.y, GRID_SIZE, GRID_SIZE };
+//            SDL_RenderFillRect(renderer, &rect);
+//        }
+//
+//        // Draw food
+//        SDL_SetRenderDrawColor(renderer, 255, 0, 0, 255);
+//        SDL_Rect foodRect{ foodX, foodY, GRID_SIZE, GRID_SIZE };
+//        SDL_RenderFillRect(renderer, &foodRect);
+//
+//        // Update the screen
+//        SDL_RenderPresent(renderer);
+//
+//        // Delay for snake movement
+//        SDL_Delay(SNAKE_SPEED);
+//    }
+//
+//    // Clean up and quit
+//    SDL_DestroyRenderer(renderer);
+//    SDL_DestroyWindow(window);
+//    SDL_Quit();
+//
+//    return 0;
+//}
 
 //Texture wrapper class
 //class LTexture
