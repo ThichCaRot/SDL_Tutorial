@@ -162,6 +162,9 @@
     <ClCompile Include="49_mutexes_and_conditions\49_mutexes_and_conditions.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="50_SDL_and_opengl_2\50_SDL_and_opengl_2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Image Include="background.png">
