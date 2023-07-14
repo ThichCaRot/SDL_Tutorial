@@ -146,8 +146,10 @@
     <ClCompile Include="12_color_modulation.cpp" />
     <ClCompile Include="13_alpha_blending.cpp" />
     <ClCompile Include="14_animated_sprites_and_vsync.cpp" />
+    <ClCompile Include="15_rotation_and_flipping.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <Image Include="arrow.png" />
     <Image Include="background.png" />
     <Image Include="colors.png" />
     <Image Include="dots.png" />

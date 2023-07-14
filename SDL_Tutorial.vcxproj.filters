@@ -57,6 +57,9 @@
     <ClCompile Include="14_animated_sprites_and_vsync.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="15_rotation_and_flipping.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Image Include="background.png">
@@ -111,6 +114,9 @@
       <Filter>Resource Files</Filter>
     </Image>
     <Image Include="foi.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="arrow.png">
       <Filter>Resource Files</Filter>
     </Image>
   </ItemGroup>
