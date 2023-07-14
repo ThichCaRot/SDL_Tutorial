@@ -171,6 +171,7 @@
     <ClCompile Include="37_multiple_displays\37_multiple_displays.cpp" />
     <ClCompile Include="38_particle_engines\38_particle_engines.cpp" />
     <ClCompile Include="39_tiling\39_tiling.cpp" />
+    <ClCompile Include="40_texture_manipulation\40_texture_manipulation.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="26_motion\dot.bmp" />
@@ -189,6 +190,7 @@
     <Image Include="38_particle_engines\shimmer.bmp" />
     <Image Include="39_tiling\dot.bmp" />
     <Image Include="39_tiling\tiles.png" />
+    <Image Include="40_texture_manipulation\foo.png" />
     <Image Include="arrow.png" />
     <Image Include="arrow_joy.png" />
     <Image Include="background.png" />
