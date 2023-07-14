@@ -111,6 +111,9 @@
     <ClCompile Include="32_text_input_and_clipboard_handling\32_text_input_and_clipboard_handling.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="33_file_reading_and_writing\33_file_reading_and_writing.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Image Include="background.png">
@@ -226,6 +229,7 @@
     <Font Include="24_calculating_frame_rate\lazy.ttf" />
     <Font Include="25_capping_frame_rate\lazy.ttf" />
     <Font Include="32_text_input_and_clipboard_handling\lazy.ttf" />
+    <Font Include="33_file_reading_and_writing\lazy.ttf" />
   </ItemGroup>
   <ItemGroup>
     <Media Include="beat.wav">
