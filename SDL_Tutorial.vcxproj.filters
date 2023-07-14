@@ -135,6 +135,9 @@
     <ClCompile Include="40_texture_manipulation\40_texture_manipulation.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="41_bitmap_fonts\41_bitmap_fonts.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Image Include="background.png">
@@ -267,6 +270,9 @@
       <Filter>Resource Files</Filter>
     </Image>
     <Image Include="40_texture_manipulation\foo.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="41_bitmap_fonts\lazyfont.png">
       <Filter>Resource Files</Filter>
     </Image>
   </ItemGroup>
