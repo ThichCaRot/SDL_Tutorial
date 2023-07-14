@@ -162,6 +162,7 @@
     <ClCompile Include="28_per-pixel_collision_detection\28_per-pixel_collision_detection.cpp" />
     <ClCompile Include="29_circular_collision_detection\29_circular_collision_detection.cpp" />
     <ClCompile Include="30_scrolling\30_scrolling.cpp" />
+    <ClCompile Include="31_scrolling_backgrounds\31_scrolling_backgrounds.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="26_motion\dot.bmp" />
@@ -170,6 +171,8 @@
     <Image Include="29_circular_collision_detection\dot.bmp" />
     <Image Include="30_scrolling\bg.png" />
     <Image Include="30_scrolling\dot.bmp" />
+    <Image Include="31_scrolling_backgrounds\bg.png" />
+    <Image Include="31_scrolling_backgrounds\dot.bmp" />
     <Image Include="arrow.png" />
     <Image Include="arrow_joy.png" />
     <Image Include="background.png" />
