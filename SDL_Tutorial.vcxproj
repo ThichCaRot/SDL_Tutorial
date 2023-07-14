@@ -179,6 +179,7 @@
     <ClCompile Include="45_timer_callbacks\45_timer_callbacks.cpp" />
     <ClCompile Include="46_multithreading\46_multithreading.cpp" />
     <ClCompile Include="47_semaphores\47_semaphores.cpp" />
+    <ClCompile Include="48_atomic_operations\48_atomic_operations.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="26_motion\dot.bmp" />
@@ -207,6 +208,7 @@
     <Image Include="45_timer_callbacks\splash.png" />
     <Image Include="46_multithreading\splash.png" />
     <Image Include="47_semaphores\splash.png" />
+    <Image Include="48_atomic_operations\splash.png" />
     <Image Include="arrow.png" />
     <Image Include="arrow_joy.png" />
     <Image Include="background.png" />
